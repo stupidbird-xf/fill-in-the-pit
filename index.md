@@ -15,3 +15,9 @@
 #### vue动画执行之后每次结束弹出的弹窗都会乱
 
 > 事件监听，每次执行之后清除事件监听
+
+#### vue 项目用<template></>template>
+
+> template不是真正的dom元素，编译之后不显示dom 循环的时候不能带key
+
+> 解决 key放在template 里面的子元素上
