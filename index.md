@@ -35,3 +35,11 @@
     self.emit('finish', 0, '');
     self._cleanup(false);
   }
+
+#### 7、 vue项目有的时候接口成功，但是后台得不到数据
+
+> 原因：axios 发送post请求 当参数为对象时，参数在request payload里，content-type为application/json;charset=UTF-8，这样springmvc是不能通过
+
+> 解决： 修改axios请求头 headers: {
+      'Content-Type': type || 'application/x-www-form-urlencoded'
+    }
