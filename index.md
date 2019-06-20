@@ -43,3 +43,9 @@
 > 解决： 修改axios请求头 headers: {
       'Content-Type': type || 'application/x-www-form-urlencoded'
     }
+
+#### vue 解决页面v-for中修改item属性值后页面v-if不改变的问题
+
+> 原因：层级嵌套的太多
+
+> this.$forceUpdate();
