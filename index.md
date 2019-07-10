@@ -49,3 +49,11 @@
 > 原因：层级嵌套的太多
 
 > this.$forceUpdate();
+
+#### 用vue重构的时候调用之前的接口范湖时间变成毫秒数了，之前返回是时间格式
+
+> 请求端可以通过accept设置后端返回的数据类型 axios 默认accept 是application/json, text/plain, */*
+
+> headers: {
+    'Accept': '*/*'
+  },
