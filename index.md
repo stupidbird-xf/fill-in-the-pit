@@ -57,3 +57,9 @@
 > headers: {
     'Accept': '*/*'
   },
+
+#### swiper onClick绑定事件手动滑动之后事件失效
+
+> swiper框架复制的slide没有复制click事件，所以click失效 
+
+> 解决办法： 在现有的dom上绑定动态属性如（:name="slide.name"），利用new Swiper时绑定事件如： option{on: {click(e) {consoe.log(e.target.name)}}}
