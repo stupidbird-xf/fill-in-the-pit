@@ -44,13 +44,13 @@
       'Content-Type': type || 'application/x-www-form-urlencoded'
     }
 
-#### vue 解决页面v-for中修改item属性值后页面v-if不改变的问题
+#### 8、vue 解决页面v-for中修改item属性值后页面v-if不改变的问题
 
 > 原因：层级嵌套的太多
 
 > this.$forceUpdate();
 
-#### 用vue重构的时候调用之前的接口范湖时间变成毫秒数了，之前返回是时间格式
+#### 9、用vue重构的时候调用之前的接口范湖时间变成毫秒数了，之前返回是时间格式
 
 > 请求端可以通过accept设置后端返回的数据类型 axios 默认accept 是application/json, text/plain, */*
 
@@ -58,8 +58,12 @@
     'Accept': '*/*'
   },
 
-#### swiper onClick绑定事件手动滑动之后事件失效
+#### 10、swiper onClick绑定事件手动滑动之后事件失效
 
 > swiper框架复制的slide没有复制click事件，所以click失效 
 
 > 解决办法： 在现有的dom上绑定动态属性如（:name="slide.name"），利用new Swiper时绑定事件如： option{on: {click(e) {consoe.log(e.target.name)}}}
+
+#### 11、安卓手机调用微信扫一扫问题 在APP.vue里面config 但是页面里面调用扫一扫接口没有反应
+
+> 安卓手机需要在router 导航守卫全局后置钩子afterEach里面config
