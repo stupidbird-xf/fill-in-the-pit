@@ -67,3 +67,9 @@
 #### 11、安卓手机调用微信扫一扫问题 在APP.vue里面config 但是页面里面调用扫一扫接口没有反应
 
 > 安卓手机需要在router 导航守卫全局后置钩子afterEach里面config
+
+#### ElementUI dialog初始化获取不到元素
+
+> Vue+ElementUI开发项目，使用Dialog作为子组件时，父组件初始化子组件内部未能获取到dom元素
+
+> + slot="footer"
