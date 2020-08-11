@@ -73,3 +73,19 @@
 > Vue+ElementUI开发项目，使用Dialog作为子组件时，父组件初始化子组件内部未能获取到dom元素
 
 > + slot="footer"
+
+#### 12、文本超出省略
+
+> 单行文本超出省略： 
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+
+> 多行文本超出省略
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // 行数
+  -webkit-box-orient: vertical;
+
+> 注意： 多行文本超出省略 样式元素不可加padding-bottom
